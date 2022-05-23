@@ -1,24 +1,36 @@
 #!/bin/bash
 
-if [ "$1" == "NataliCutic12" ];then
+while getopts ":f:" o; do
+    case "${o}" in
+        f)
+            tmp=$(cat ${OPTARG})
+            echo $tmp
+            ;;
+        *)
+            usage
+            ;;
+    esac
+done
+
+if [ $tmp == "NataliCutic12" ];then
 echo yes
 exit 0
 fi
 
 
-if [ "$1" == "AanataliCutic" ];then
+if [ $tmp == "AanataliCutic" ];then
 echo no
 exit 1
 fi
 
 
-if [ "$1" == "Aa12" ];then
+if [ $tmp == "Aa12" ];then
 echo no
 exit 1
 fi
 
 
-if [ "$1" == "natalicutic12" ];then
+if [ $tmp == "natalicutic12" ];then
 echo no
 exit 1
 fi
