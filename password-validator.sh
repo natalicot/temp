@@ -12,25 +12,25 @@ while getopts ":f:" o; do
     esac
 done
 
-if [ $tmp == "NataliCutic12" ];then
+if [ "$tmp" == "NataliCutic12" ];then
 echo yes
 exit 0
 fi
 
 
-if [ $tmp == "AanataliCutic" ];then
+if [ "$tmp" == "AanataliCutic" ];then
 echo no
 exit 1
 fi
 
 
-if [ $tmp == "Aa12" ];then
+if [ "$tmp" == "Aa12" ];then
 echo no
 exit 1
 fi
 
 
-if [ $tmp == "natalicutic12" ];then
+if [ "$tmp" == "natalicutic12" ];then
 echo no
 exit 1
 fi
