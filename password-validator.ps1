@@ -3,7 +3,7 @@ param (
 )
 
 
-$content= cat $f
+if($f){$content= cat $f}
 
 
 
