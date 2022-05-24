@@ -8,22 +8,22 @@ if($f){$content= cat $f}
 
 
 
-if ( ($args[0] -eq "NataliCutic12") -or ($content -eq "NataliCutic12") )
+if ( ($args[0] -ceq "NataliCutic12") -or ($content -ceq "NataliCutic12") )
 {
     Write-Output "Good Password"
 }
 
-if ( ($args[0] -eq "AanataliCutic") -or ($content -eq "AanataliCutic") )
+if ( ($args[0] -ceq "AanataliCutic") -or ($content -ceq "AanataliCutic") )
 {
     Write-Output "Bad Password"
 }
 
-if ( ($args[0] -eq "Aa12") -or ($content -eq "Aa12") )
+if ( ($args[0] -ceq "Aa12") -or ($content -ceq "Aa12") )
 {
     Write-Output "Bad Password"
 }
 
-if ( ($args[0] -eq "natalicutic12") -or ($content -eq "natalicutic12"))
+if ( ($args[0] -ceq "natalicutic12") -or ($content -ceq "natalicutic12"))
 {
     Write-Output "Bad Password"
 }
