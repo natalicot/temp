@@ -1,5 +1,5 @@
 param (
-[string]$f = "ff"
+[string]$f = ""
 )
 
 
